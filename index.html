@@ -1,44 +1,45 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>Redirecting...</title>
-
-  <!-- Redirect utama -->
-  <meta http-equiv="refresh" content="0; url=https://script.google.com/macros/s/AKfycbxB2yjoGoXLejpTTynEgQ5rekjthtutSz1ZDQUckU596ZN8zNCOgvG5XBRq_O4whgvI/exec">
-
-  <!-- Fallback JS -->
-  <script>
-    window.location.href = "https://script.google.com/macros/s/AKfycbxB2yjoGoXLejpTTynEgQ5rekjthtutSz1ZDQUckU596ZN8zNCOgvG5XBRq_O4whgvI/exec";
-  </script>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>In/Out</title>
+  <link rel="icon" href="https://ridergalau.id/wp-content/uploads/2026/01/Logo-SPX-Express.png" />
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      background: #0f172a;
-      color: #fff;
+    html, body {
       margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #eee;
+      overflow: hidden; /* Mencegah scroll ganda */
     }
-    .box {
-      text-align: center;
+
+    .iframe-container {
+      width: 100%;
+      height: 100dvh; /* Menggunakan dvh agar pas di mobile browser */
+      overflow: hidden;
     }
-    a {
-      color: #38bdf8;
-      text-decoration: none;
+
+    iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: none;
     }
   </style>
 </head>
 <body>
-  <div class="box">
-    <h2>🔄 Mengalihkan...</h2>
-    <p>Jika tidak otomatis, klik link di bawah:</p>
-    <a href="https://script.google.com/macros/s/AKfycbxB2yjoGoXLejpTTynEgQ5rekjthtutSz1ZDQUckU596ZN8zNCOgvG5XBRq_O4whgvI/exec">
-      Buka Link
-    </a>
+  <div class="iframe-container">
+    <iframe
+      id="app"
+      src="https://script.google.com/macros/s/AKfycbxB2yjoGoXLejpTTynEgQ5rekjthtutSz1ZDQUckU596ZN8zNCOgvG5XBRq_O4whgvI/exec"
+      scrolling="yes"
+      allowfullscreen="true"
+      webkitallowfullscreen="true"
+      mozallowfullscreen="true"
+      allow="fullscreen; camera; microphone; display-capture; geolocation;">
+    </iframe>
   </div>
 </body>
 </html>
